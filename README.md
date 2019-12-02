@@ -12,7 +12,11 @@ It supports separation of model and view, runs without external dependencies, ca
 Documentation
 -------------
 
-This project has been moved from https://code.google.com/p/jmte/, and there is some documentation still in their wiki pages: https://code.google.com/archive/p/jmte/wikis. On github there just is basic documentation [here](https://cdn.rawgit.com/DJCordhose/jmte/master/doc/index.html). For more details see the tests that cover all variations of the scripting language and extensions to the engine: https://github.com/DJCordhose/jmte/tree/master/test/com/floreysoft/jmte
+This project has been moved from https://code.google.com/p/jmte/.
+
+This fork has ported the documentation from the original [wiki pages](https://code.google.com/archive/p/jmte/wikis) over to GitHub wiki pages: https://github.com/duckAsteroid/jmte/wiki/Home
+
+On github there just is basic documentation [here](https://cdn.rawgit.com/DJCordhose/jmte/master/doc/index.html). For more details see the tests that cover all variations of the scripting language and extensions to the engine: https://github.com/DJCordhose/jmte/tree/master/test/com/floreysoft/jmte
 
 Where is JMTE used
 ------------------

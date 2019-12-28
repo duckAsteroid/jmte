@@ -4,3 +4,5 @@ bin
 doc/api
 .idea/workspace.xml
 local.properties
+/.idea/
+/.gradle/

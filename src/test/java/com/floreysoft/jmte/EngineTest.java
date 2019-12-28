@@ -1199,10 +1199,10 @@ public class EngineTest {
 	public void namedRenderer() throws Exception {
 		String output = ENGINE_WITH_NAMED_RENDERERS
 				.transform(
-						"\"${date;date(yyyy.MM.dd HH:mm:ss z)}\" and \"${int;date}\" and ${bean;date(long)} and ${address;string(this is the format(no matter what I type; - this is part of the format))}",
+						"\"${date;date(yyyy.MM.dd HH:mm:ss)}\" and \"${int;date}\" and ${bean;date(long)} and ${address;string(this is the format(no matter what I type; - this is part of the format))}",
 						DEFAULT_MODEL);
 		assertEquals(
-				clearTimezone("\"1970.01.01 01:00:00 MEZ\" and \"01.01.1970 01:00:00 +0100\" and  and String=Filbert(this is the format(no matter what I type; - this is part of the format))"),
+				clearTimezone("\"1970.01.01 01:00:00\" and \"01.01.1970 01:00:00 +0100\" and  and String=Filbert(this is the format(no matter what I type; - this is part of the format))"),
 				clearTimezone(output));
 	}
 
@@ -1296,8 +1296,8 @@ public class EngineTest {
 		Map<String, Object> model = new HashMap<String, Object>();
 		model.put("date", date);
 		String output = ENGINE_WITH_NAMED_RENDERERS.transform(
-                "${date;date(yyyy.MM.dd HH:mm:ss z)}", model);
-		assertEquals(clearTimezone("1970.01.01 01:00:00 MEZ"), clearTimezone(output));
+                "${date;date(yyyy.MM.dd HH:mm:ss)}", model);
+		assertEquals("1970.01.01 01:00:00", output);
 	}
 
 	@Test

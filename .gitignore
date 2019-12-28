@@ -6,3 +6,4 @@ doc/api
 local.properties
 /.idea/
 /.gradle/
+/build/

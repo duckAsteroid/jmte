@@ -1,7 +1,9 @@
 JMTE: Java Minimal Template Language
 ====
 
-[![Build Status](https://travis-ci.org/DJCordhose/jmte.svg?branch=master)](https://travis-ci.org/DJCordhose/jmte)
+[![Build Status](https://travis-ci.com/duckAsteroid/jmte.svg?branch=master)](https://travis-ci.com/duckAsteroid/jmte)
+
+NOTE: This project is also (experimentally) built by GitHub Actions
 
 The Java project Minimal Template Engine is meant to fill the gap between simple string formatting with basic Java classes like String.format and complex template solutions like Velocity or StringTemplate.
 
